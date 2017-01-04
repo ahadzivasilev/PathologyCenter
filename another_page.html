@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<div w3-include-html="head.html"></div>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div w3-include-html="header.html"></div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li class="selected"><a href="another_page.html">Another Page</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div w3-include-html="banner_3images.html"></div>
+        <div w3-include-html="sidebars.html"></div>
+        <div id="content">
+            <h1>PLACEHOLDER</h1>
+            <p>Nothing to see here. Move along.</p>
+        </div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+</div>
+</body>
+<script>
+    w3IncludeHTML();
+</script>
+</html>

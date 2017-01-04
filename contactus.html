@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<div w3-include-html="head.html"></div>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div w3-include-html="header.html"></div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="another_page.html">Another Page</a></li>
+                <li class="selected"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div w3-include-html="sidebars.html"></div>
+        <div id="content">
+            <h1>Contact Us</h1>
+            <h2>Address:</h2>
+            <ul>
+                <li>Str. Partizanska bb, Hall of Army of the Republic of Macedonia, 6000 Ohrid</li>
+                <li>Telephone number: +389 46511000</li>
+                <li>Fax number: +389 46511567</li>
+                <li>E-mail address: contact@uist.edu.mk</li>
+                <li>Web page: www.uist.edu.mk</li>
+            </ul>
+            <!-- Currently disabled because of lack of functionality. Might enable it later to showoff.
+            <div class="form_settings">
+                <p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p>
+                <p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p>
+                <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
+                <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit" /></p>
+            </div>
+            -->
+        </div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+</div>
+</body>
+<script>
+    w3IncludeHTML();
+</script>
+</html>
